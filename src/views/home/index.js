@@ -10,6 +10,9 @@ import mortyhead from './img/morty.gif'
 import gifcell from './img/gifcell.gif'
 import squanch from './img/squanch.gif'
 
+
+
+
 export default function Home() {
 
     return(
@@ -48,6 +51,7 @@ export default function Home() {
                     <img id='squanch' src={squanch}></img>
                 </div>
             </section>
+            
         </div>
         </div>
     )
