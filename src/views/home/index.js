@@ -1,22 +1,35 @@
 /* eslint-disable jsx-a11y/alt-text */
 
-import React from "react"
-import './style.css'
-import { Link } from "react-router-dom"
+import React from "react";
+import './style.css';
+import { Link } from "react-router-dom";
+import img_black from './img/bg_welcome.png';
+import iconDown from './img/down.svg';
+import './responsive.css'
+import rickhead from './img/rick.gif';
+import mortyhead from './img/morty.gif';
+import gifcell from './img/gifcell.gif';
+import squanch from './img/squanch.gif';
+import frame from './img/frame.png';
+import { useEffect, useState } from "react/cjs/react.development";
+import ModalComponent from '../../components/Modal';
 
-import portal from './img/portal.gif'
-import rickhead from './img/rick.gif'
-import mortyhead from './img/morty.gif'
-import gifcell from './img/gifcell.gif'
-import squanch from './img/squanch.gif'
+
+
+
+
 
 
 
 
 export default function Home() {
 
-    return(
-       
+ 
+    const [showModal, setShowModal] = useState('')
+   
+
+    return (
+
         <div id='body'>
             <div id="containerHome">
             <section id='sec-title'>
@@ -28,7 +41,7 @@ export default function Home() {
                     <p id='p'>Navegue num mar de curiosidades da nossa comunidade de fãs da melhor série animada do mundo!</p> 
                 </div>
                 <div id='portal-div'>
-                    <img id='portal' src={portal}></img>
+                    
                 </div>
             </section>
             <section className='sections'>
@@ -52,6 +65,7 @@ export default function Home() {
                 </div>
             </section>
             
+            <footer id="footer"> &copy; Desenvolvido por Luis Henrique  </footer>
         </div>
         </div>
     )
